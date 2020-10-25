@@ -25,23 +25,29 @@ topicChangeHandler = (event) => {
 
   render() {
     return(
-      <div  style={{paddingLeft:10}}>
-        <h1>CREATE A LINK FOR YOUR FAKE NEWS!!</h1>
-        <form  style={{paddingLeft:30}}>
-          <p>Enter the breaking news headline :</p>
+      <div  style={{paddingLeft:10}} className='page-container'>
+        <h1 className="page-header">CREATE A LINK FOR YOUR FAKE NEWS</h1>
+        <h4 className="page-header">Rickroll your friends in three easy steps.</h4>
+        <form  style={{paddingLeft:30}} className='news-form'>
+          <p>What's the headline?</p>
           <input
             type='text'
             onChange={this.headlineChangeHandler}
+            placeholder="Headline"
+            className='news-form-headline'
           />
-          <p>Enter the topic :</p>
+          <p>And the topic?</p>
           <input
             type='text'
             onChange={this.topicChangeHandler}
+            placeholder="Topic"
+            className='news-form-topic'
           />
           <div>
           <br></br>
-          <h3>Copy this link and forward it to your friends ASAP!!</h3>
-          <span>{this.state.newstring}</span>
+          <h3>Link to BREAKING NEWS</h3>
+          <p className="news-string">{this.state.newstring}</p>
+          <br></br>
           </div>
         </form>
       </div>

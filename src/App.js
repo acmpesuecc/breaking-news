@@ -3,6 +3,8 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import Homepage from './Homepage';
 import News from './News';
 
+import "./App.css"
+
 function App() {
   return (
     <BrowserRouter>
