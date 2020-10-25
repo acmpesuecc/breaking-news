@@ -29,11 +29,11 @@ class News extends Component {
 
     <ReactPlayer
       url="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
-      playing={true}
+      autoplay
+	  //playing={true}
       muted={false}
-      width="100%"
-      height="100%"
-
+      width={560}
+      height={400}
     />
 
       <div style={phantom} />
