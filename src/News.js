@@ -25,22 +25,25 @@ width: '100%',
 class News extends Component {
   render() {
     return(
-    <div>
-
-    <ReactPlayer
-      url="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
-      playing={true}
-      muted={false}
-      width={560}
-      height={400}
-    />
+    <div className="page-container " >
+      <h1 class='page-header'>
+        BREAKING NEWS!
+      </h1>
+      <form className='news-form'>
+        <ReactPlayer
+          url="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
+          width={"90%"}
+          playing={true}
+          muted={false}
+          className='player '
+      />
+      </form>
 
       <div style={phantom} />
       <div style={style}>
-      To create your own fake news link 
-      <Link to="/">
-        <button>Click Here!!</button>
-      </Link>
+        <Link to="/">
+          Click Here to send your friends some breaking news
+        </Link>
       </div>
       </div>
     )

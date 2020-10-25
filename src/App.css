@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.page-container {
+  text-align: center;
+}
+
+.news-form {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.news-form-headline {
+
+}
+
+.news-string {
+  padding: 1em;
+  margin: 1em;
+  background-color: lightgrey;
+  border-radius: 0.3em;
+}
+
+.page-header {
+  text-decoration: underline;
+  text-decoration-color: gold;
+}
+
+.player {
+  padding: 1em;
+  margin: 1em;
+  border-radius: 0.3;
+  width: 100%;
+  height: auto;
+}
+
+.player-container {
+  align-self: center ;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
