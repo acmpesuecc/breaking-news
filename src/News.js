@@ -31,8 +31,9 @@ class News extends Component {
       url="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
       playing={true}
       muted={false}
-      width={560}
-      height={400}
+      width="100%"
+      height="100%"
+
     />
 
       <div style={phantom} />
