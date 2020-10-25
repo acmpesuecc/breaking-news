@@ -14,13 +14,14 @@ class Homepage extends Component {
   handleChange = (e) => {
     var txt = e.target.value;
     var ssss = "";
-    for(var i=0;i<txt.length;i++){
-      if(txt[i] == " "){
+    for(var i=0;i<txt.length;++i){
+      if(txt[i] === " "){
         ssss+="-";
       }
       else{
         ssss+=txt[i];
       }
+      //console.log(ssss)
     }
 
     this.setState({
@@ -36,7 +37,7 @@ class Homepage extends Component {
 
   render() {
     return(
-      <div >
+      <div>
         <form onSubmit ={this.handleSubmit}>
           <label>Enter the breaking news headline</label>
           <input type="textbox" id="inputstring" onChange={this.handleChange}></input>
