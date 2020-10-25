@@ -31,13 +31,15 @@ class News extends Component {
       url="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
       playing={true}
       muted={false}
+      width={560}
+      height={400}
     />
 
       <div style={phantom} />
       <div style={style}>
-      To create your own fake news link
-      <Link to="/"> 
-      <button>Click Here!!</button>
+      To create your own fake news link 
+      <Link to="/">
+        <button>Click Here!!</button>
       </Link>
       </div>
       </div>
