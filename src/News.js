@@ -1,14 +1,46 @@
 import React, { Component } from 'react';
+import ReactPlayer from "react-player";
+import { Link } from 'react-router-dom';
+
+
+var style = {
+  backgroundColor: "#F8F8F8",
+  borderTop: "1px solid #E7E7E7",
+  textAlign: "center",
+  padding: "20px",
+  position: "fixed",
+  left: "0",
+  bottom: "0",
+  height: "60px",
+  width: "100%",
+}
+
+var phantom = {
+display: 'block',
+padding: '20px',
+height: '60px',
+width: '100%',
+}
 
 class News extends Component {
   render() {
     return(
-      <iframe width="560"
-      height="315"
-      src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+    <div>
+
+    <ReactPlayer
+      url="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
+      playing={true}
+      muted={false}
+    />
+
+      <div style={phantom} />
+      <div style={style}>
+      To create your own fake news link
+      <Link to="/"> 
+      <button>Click Here!!</button>
+      </Link>
+      </div>
+      </div>
     )
   }
 }
