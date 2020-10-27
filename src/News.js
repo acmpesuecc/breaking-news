@@ -29,23 +29,19 @@ class News extends Component {
       <h1 class='page-header'>
         BREAKING NEWS!
       </h1>
-      <form className='news-form'>
-        <ReactPlayer
-          url="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
-          width={"90%"}
-          playing={true}
-          muted={false}
-          className='player '
-      />
-      </form>
+      <iframe width="1400"
+      height="750"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
 
       <div style={phantom} />
       <div style={style}>
         <Link to="/">
           Click Here to send your friends some breaking news
         </Link>
-      </div>
-      </div>
+      </div>      </div>
     )
   }
 }
